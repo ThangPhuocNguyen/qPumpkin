@@ -22,6 +22,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.synced_folder "../design", "/home/vagrant/design"
   config.vm.synced_folder "../src", "/home/vagrant/src"
+  config.vm.synced_folder "../hero", "/home/vagrant/hero"
+  config.vm.synced_folder "../one", "/home/vagrant/one"
+  config.vm.synced_folder "../two", "/home/vagrant/two"
+  config.vm.synced_folder "../three", "/home/vagrant/three"
+  config.vm.synced_folder "../four", "/home/vagrant/four"
 
   config.vm.provision "shell", :path => "bootstrap.sh", :privileged => false
 
