@@ -1,1 +1,15 @@
 <p>This is the about view.</p>
+<textarea
+  mentio=""
+  mentio-trigger-char="'@'"
+  mentio-items="people"
+  mentio-template-url="views/abc.html"
+  mentio-search="searchPeople(term)"
+  mentio-select="getPeopleTextRaw(item)"
+  mentio-typed-text="typedTerm"
+  class="editor form-control"
+  ng-model="theTextArea"
+  ng-trim="false"
+  rows="6"
+  autocomplete="off">
+</textarea>

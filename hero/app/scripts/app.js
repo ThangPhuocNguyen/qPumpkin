@@ -14,6 +14,7 @@
       'ui.router',
       'Home',
       'Profile',
+      'mentio',
     ])
     .run([
         '$state',
